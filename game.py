@@ -55,7 +55,7 @@ while bhp > 0 and shp > 0:
                 print(menua.index(x),x)
             x=input()
             if x < "0" or x > "4" or len(x)>1:
-                print("FALSCHE EINEGABE !!!!!")
+                print("FALSCHE EINGABE !!!!!")
                 continue
             else:
                 print()
@@ -81,7 +81,7 @@ while bhp > 0 and shp > 0:
             print()
             treffer=random.random()
             if treffer < krit:
-                print("Der Ultimativer Angriff ist gelungen!")
+                print("Der Ultimative Angriff ist gelungen!")
                 schaden=maxschaden*2
                 print(b,"erleidet",schaden,"Schaden")
                 bhp=bhp-schaden
@@ -96,7 +96,7 @@ while bhp > 0 and shp > 0:
             print("--------------------")
             print(spieler,"greift mit Magie an!")
             schaden=random.randint(3, 5)
-            print(b,"erleidet",schaden,"schaden")
+            print(b,"erleidet",schaden,"Schaden")
             bhp=bhp-schaden
             print(b,"hat noch",bhp,"Herzen")
             print("()"*int(bhp))
@@ -112,27 +112,27 @@ while bhp > 0 and shp > 0:
             print()
             schlag=random.random()
             if schlag < schlag1:
-                    print("Du hast einen zweiten treffer gelandet!")
+                    print("Du hast einen zweiten Treffer gelandet!")
                     schaden=2.5
                     print(b,"verliert",schaden,"Herzen!")
                     bhp=bhp-schaden
                     print(b,"hat noch",bhp,"herzen!")
                     schlag=random.random()
             if schlag < schlag2:
-                    print("Du hast einen dritten treffer gelandet!")
+                    print("Du hast einen dritten Treffer gelandet!")
                     schaden=3.5
                     print(b,"verliert",schaden,"Herzen!")
                     bhp=bhp-schaden
-                    print(b,"hat noch",bhp,"herzen!")
+                    print(b,"hat noch",bhp,"Herzen!")
                     schlag=random.random()
             if schlag < schlag3:
-                    print("Du hast einen vierten treffer gelandet!")
+                    print("Du hast einen vierten Treffer gelandet!")
                     schaden=4
                     print(b,"verliert",schaden,"Herzen!")
                     bhp=bhp-schaden
-                    print(b,"hat noch",bhp,"herzen!")
+                    print(b,"hat noch",bhp,"Herzen!")
             else:
-                    print("Das waren deine angriffe!")
+                    print("Das waren deine Angriffe!")
         #Menü 2 von dem Spieler
         verteidigen=False
         verstecken=False
@@ -183,7 +183,7 @@ while bhp > 0 and shp > 0:
                 print("Das war schlecht!")
         elif schaden >= 10:
                 print("Du bist der schlechteste Spieler in diesem Spiel!")
-        print("Du erleidest schaden:",schaden)
+        print("Du erleidest Schaden:",schaden)
         shp=shp-schaden
         print("Du hast noch",shp,"Herzen")
         print("o"*int(shp))
